@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import Cartitem from '../components/Cartitem'
+import { NavLink } from 'react-router-dom';
 
 const Cart = () => {
 
@@ -49,11 +50,11 @@ const Cart = () => {
         (
           <div>
             <h2>Cart Empty</h2>
-            <link to={"/"}>
+            <NavLink to={"/"}>
               <button>
                 Shop Now
               </button>
-            </link>
+            </NavLink>
           </div>
         )
       }

@@ -9,7 +9,7 @@ export const Navbar = () => {
         <div className='flex flex-row justify-between'>
             <NavLink to="/">
               <div>
-                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fcoding-logo&psig=AOvVaw186uwC8uE3a8U7tjjXVNtV&ust=1700638705559000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCDxIHL1IIDFQAAAAAdAAAAABAI" alt="logo" />
+                <img src="../logo.png" className='h-14' alt="logo" />
               </div>
             </NavLink>
             <div>
