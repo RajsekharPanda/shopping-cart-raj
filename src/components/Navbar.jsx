@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
   return (
-    <div>
+    <div className='bg-red-300'>
         <div className='flex flex-row justify-between'>
             <NavLink to="/">
               <div>
