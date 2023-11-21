@@ -9,7 +9,7 @@ export const Navbar = () => {
         <div className='flex flex-row justify-between'>
             <NavLink to="/">
               <div>
-                <img src="../logo.png" className='h-14' alt="logo" />
+                <img src="../src/assets/logo.png" className='h-14' alt="logo" />
               </div>
             </NavLink>
             <div>
