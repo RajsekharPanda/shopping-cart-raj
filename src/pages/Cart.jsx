@@ -19,7 +19,7 @@ const Cart = () => {
         cart.length > 0 ? 
         (
           <div className='flex justify-center mx-auto max-w-6xl w-3xl gap-7 h-[42rem]'>
-            <div className='w-[50%] overflow-auto h-[42rem]'>
+            <div className='w-[50%] overflow-auto h-[57rem]'>
               {
                 cart.map( (item, index) => {
                   return <Cartitem key={item.id} item={item} itemIndex={index}/>

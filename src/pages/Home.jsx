@@ -30,7 +30,7 @@ const Home = () => {
 
 
   return (
-    <div className='flex justify-center items-center w-full h-screen z-0'>
+    <div className='flex justify-center items-center w-full h-screen z-0 mt-[20rem]'>
       {
         loading ? <Spinner/> :
         posts.length > 0 ?
