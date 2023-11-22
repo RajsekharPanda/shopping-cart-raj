@@ -13,7 +13,7 @@ export const Navbar = () => {
         <nav className='flex justify-between items-center h-20 max-w-6xl mx-auto'>
             <NavLink to="/">
               <div className='ml-5'>
-                <img src="../src/assets/logo.png" className='h-14' alt="logo" />
+                <img src="public/logo.png" className='h-14' alt="logo" />
               </div>
             </NavLink>
             <div className='flex items-center font-medium	text-slate-100 mr-5 space-x-6'>
