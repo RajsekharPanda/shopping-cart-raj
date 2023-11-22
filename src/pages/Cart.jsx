@@ -14,12 +14,12 @@ const Cart = () => {
   },[cart])
 
   return (
-    <div>
+    <div className='w-full mt-24'>
       {
         cart.length > 0 ? 
         (
-          <div>
-            <div>
+          <div className='flex justify-center mx-auto max-w-6xl w-3xl gap-7 h-[42rem]'>
+            <div className='w-[50%] overflow-auto h-[42rem]'>
               {
                 cart.map( (item, index) => {
                   return <Cartitem key={item.id} item={item} itemIndex={index}/>
@@ -27,19 +27,19 @@ const Cart = () => {
               }
             </div>
 
-            <div>
+            <div className='flex flex-col justify-between w-3xl max-h-[36rem] '>
 
-              <div>
-                <div>Your Cart</div>
-                <div>Summary</div>
+              <div className=''>
+                <div className='font-semibold text-2xl text-green-800'>Your Cart</div>
+                <div className='font-bold text-4xl text-green-700'>Summary</div>
                 <p>
-                  <span>Total Items: {cart.length}</span>
+                  <span className='font-semibold'>Total Items: {cart.length}</span>
                 </p>
               </div>
 
               <div>
-                <p>Total Amount: ${totalAmount}</p>
-                <button>Check Out Now</button>
+                <p className='font-semibold'>Total Amount: <span className='font-extrabold'>${totalAmount}</span></p>
+                <button className='rounded-md font-semibold text-[18px] py-1 px-16 bg-green-700 text-white'>Checkout Now</button>
               </div>
 
             </div>
@@ -48,10 +48,10 @@ const Cart = () => {
           </div>
         ) :
         (
-          <div>
-            <h2>Cart Empty</h2>
+          <div className='flex flex-col w-full justify-center items-center h-[80vh] gap-8'>
+            <h2 className='font-bold text-4xl text-slate-900'>Cart Empty</h2>
             <NavLink to={"/"}>
-              <button>
+              <button className='rounded-md text-[1rem] py-1 px-8 bg-green-700 text-white'>
                 Shop Now
               </button>
             </NavLink>

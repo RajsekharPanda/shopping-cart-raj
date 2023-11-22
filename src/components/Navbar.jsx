@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   const {cart} = useSelector((state) => state); 
   return (
-    <div>
+      <div className='bg-slate-900 fixed top-0 w-full z-50'>
         <nav className='flex justify-between items-center h-20 max-w-6xl mx-auto'>
             <NavLink to="/">
               <div className='ml-5'>
